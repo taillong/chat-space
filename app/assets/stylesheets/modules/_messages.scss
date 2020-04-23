@@ -42,28 +42,19 @@
   .groups{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    // width: 100%;
-    color: #ffffff;
-    font-weight: bold;
     padding: 20px 20px 0;
     .group{
-      // height: 100px;
       margin-bottom: 40px;
-      // background-color: orange;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
       &__group-name{
-        // height: 15px;
-        // width: 100%;
         margin-bottom: 5px;
         font-size: 15px;
-        // line-height: 15px;
-        // background-color: red;
       }
       &__latest-message{
-        // height: 11px;
-        // width: 100%;
-        // line-height: 11px;
         font-size: 11px;
-        // background-color: red;
       }
     }
   }
@@ -74,8 +65,38 @@
   width: calc(100vw - 300px);
   height: 100vh;
   .main-header{
-   background-color: #ffffff; 
-   height: 100px;
+    background-color: #ffffff; 
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    &__left-box{
+      padding-top: 35px;
+      &__current-group{
+        color: #333333;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      &__member-list{
+        color: #999999;
+        font-size: 12px;
+        display: flex;
+        &__member{
+          margin-left: 5px;
+        }
+      }
+    }
+    .edit-btn{
+      text-decoration: none;
+      color: #38aef0;
+      font-size: 16px;
+      margin-top: 28px;
+      padding: 0 20px;
+      width: 72px;
+      height: 40px;
+      border: 1px solid;
+      line-height: 40px;
+    }
   }
   .messages{
     background-color: #fafafa;

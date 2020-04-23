@@ -1,4 +1,15 @@
 .chat-main
   .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group
+        夏の歌謡祭
+      %ul.main-header__left-box__member-list
+        Member:
+        %li.main-header__left-box__member-list__member
+          tomoki
+        %li.main-header__left-box__member-list__member
+          tomoki
+    = link_to "#", class: "edit-btn" do
+      Edit
   .messages
   .form
