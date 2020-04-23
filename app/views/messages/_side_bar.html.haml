@@ -1,0 +1,24 @@
+.chat-side
+  .side-header
+    .side-header__box
+      .side-header__box__user-name
+        tomoki
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          =link_to "#" do
+            =icon('far','edit')
+        %li.side-header__box__menu__new-group
+          =link_to "#" do
+            =icon('fas','cog')
+            
+  .groups
+    =link_to "#" , class: "group" do
+      %p.group__group-name
+        techcamp
+      %p.group__latest-message
+        まだメッセージがありません
+    =link_to "#" , class: "group" do
+      %p.group__group-name
+        夏の歌謡祭
+      %p.group__latest-message
+        誰が出るでしょうか
