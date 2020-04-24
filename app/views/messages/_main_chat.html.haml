@@ -2,13 +2,12 @@
   .main-header
     .main-header__left-box
       %h2.main-header__left-box__current-group
-        夏の歌謡祭
+        =@group.name
       %ul.main-header__left-box__member-list
         Member:
-        %li.main-header__left-box__member-list__member
-          tomoki
-        %li.main-header__left-box__member-list__member
-          tomoki
+        -@group.users.each do |user|
+          %li.main-header__left-box__member-list__member
+            = user.name
     = link_to "#", class: "edit-btn" do
       Edit
   .messages
