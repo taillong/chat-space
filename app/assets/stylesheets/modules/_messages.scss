@@ -42,6 +42,7 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
+    overflow: scroll;
     .group{
       margin-bottom: 40px;
       color: $side-color;
@@ -101,6 +102,7 @@
     height: calc(100vh - 100px - 90px); 
     padding-top: 35px;
     padding-left: 40px;
+    overflow: scroll;
     .message{
       margin-bottom: 46px;
       &__upper-info{
@@ -120,6 +122,7 @@
       &__text{
         color: $text-color;
         font-size: 14px;
+        margin-bottom: 10px;
       }
     }
   }
